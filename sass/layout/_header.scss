@@ -1,0 +1,123 @@
+.c-header{
+    width:100%;
+    height:50px;
+    padding:20px;
+    background-color:rgba(0,0,0,0);
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    backdrop-filter:blur(3px);
+    
+    &__svg{
+        width:200px;
+        height:40px;
+    }
+}
+
+.l-navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:calc(100% - 220px);
+
+    &__list-two{
+        margin-right:30px; 
+        height:40px;
+        display:flex;
+        justify-content:center;
+    }
+
+
+    &__item{
+        display:inline-block;
+        margin-left:20px;
+        
+        &--list-style-none{
+            list-style:none;
+        }
+
+    }
+
+    &__link{
+        color:rgb(209, 213, 219);
+        transition: all 0.8s;
+
+        &:hover{
+            color:white;
+        }
+    }
+
+    &__svg{
+        width:28px;
+        height:28px;
+        transition:all 0.3s;
+    }
+
+
+    &__container-rs{
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        box-shadow: 0px 5px 20px 3px rgba(250,250,250,0.1);
+        transition:all 0.3s;
+
+
+        &:hover{
+            transform:translate(2px, -2px);
+            margin-left:-4px;
+            width:44px;
+            height:44px;
+            color:white;
+
+            .l-navbar__svg{
+                width:30px;
+                height:30px;
+            }
+
+        }
+
+        &--social-bgcolor-uno{
+            background-color:grey;
+
+            &:hover{
+                background-color:#555555;
+            }
+        }
+
+        &--social-bgcolor-dos{
+            background-color:rgb(129,140,248);
+
+            &:hover{
+                background-color:rgb(99,102,241);
+            }
+        }
+    }
+
+    &__container-bt{
+        width:180px;
+        height:40px;
+        background: linear-gradient(90deg, rgba(42,0,179,1), rgba(37,37,144,1), rgba(38,89,138,1), rgba(36,121,139,1) , rgba(33,128,74,1));
+        background-repeat:no-repeat;
+        background-size:360px 200px;
+        border-radius:20px;
+        color:white;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transition:all 1s;
+        font-weight:600;
+        box-shadow: 0px 5px 20px 2px rgba(250,250,250,0.1);
+
+        &:hover{
+            background-position:-180px;
+        }
+    }
+
+}
+

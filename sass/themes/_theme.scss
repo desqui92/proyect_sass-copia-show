@@ -1,0 +1,9 @@
+::selection{
+    background:$selection-color;
+  }
+
+.body{
+    background-color: setscheme($theme, backgroundc);
+    color: setscheme($theme, font);
+    font-family: setscheme($theme, family)
+}

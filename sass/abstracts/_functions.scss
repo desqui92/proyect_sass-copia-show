@@ -1,0 +1,3 @@
+@function setscheme($scheme, $value){
+    @return map-get(map-get($scheme-total, $scheme), $value);
+}
