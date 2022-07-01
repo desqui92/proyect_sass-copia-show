@@ -113,6 +113,10 @@
     flex-direction:column;
     justify-content:space-between;
 
+    @include tablet{
+        width:15rem;
+        height:20rem;
+    }
 
     &--position-one{
         margin-top:60px;
@@ -126,6 +130,11 @@
         z-index:1;
         margin-left:220px;
         animation: animation-card 3s ease-in-out 2s infinite alternate;
+
+        @include tablet {
+            margin-left:180px;
+        }
+
     }
 
     &__bunny{
@@ -145,6 +154,14 @@
         width:32px;
         height:32px;
         border-radius:50%;
+
+        @include tablet {
+            width:24px;
+            height:24px;
+            margin-left:-10px;
+            margin-right:10px;
+        }
+
     }
 
     &__paragraph{
@@ -180,5 +197,10 @@
         &:hover{
             background-color:rgb(15, 110, 102);
         }
+
+        @media (max-width:1120px) {
+            padding:8px 5px;
+        }
+
     }
 }
