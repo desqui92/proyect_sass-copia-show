@@ -10,6 +10,7 @@
     top:0;
     left:0;
     backdrop-filter:blur(3px);
+    z-index:20;
     
     &__svg{
         width:200px;

@@ -1,9 +1,11 @@
-.c-section-two{
+.c-section-five{
     display:flex;
     flex-direction:column;
     width:90%;
     margin:auto;
+    height:600px;
     margin-top:100px;
+    background:url("../images/descarga.svg") repeat fixed;
 
     &__title{
         margin:auto;
@@ -13,12 +15,11 @@
         text-decoration:underline;
         text-decoration-color:rgb(62,73,122); 
     }
-}
 
 .c-slider-container{
     width:1000px;
     margin:auto;
-    margin-top:50px;
+    margin-top:-20px;
 
     &__slider{
     width:100%;
@@ -30,18 +31,44 @@
         justify-content:space-between;
         align-items:center;
     }
-    &__slide-two, &__image-two{
+
+    &__slide-five{
         width:288px;
         height:288px;
-        border-radius:25px;
+        border-radius:100%;
+        display:none;
+    }
+
+    &__image-five{
+        width:288px;
+        height:288px;
+        border-radius:100%;
         display:none;
         margin:0px;
         box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.26);
         transition: all 0.3s;
     }
 
-    &__slide-two:hover{
+    &__image-five:hover{
             transform:rotate(5deg) scale(1.05);
+    }
+
+    &__button{
+        width:120px;
+        margin-top:15px;
+        padding:6px 2px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background-color:rgba(0,0,0,0);
+        border:2px solid rgb(62,73,122);
+        border-radius:30px;
+        transition: all 0.3s;
+
+        &:hover{
+            background-color: rgb(62,73,122);
+        }
+
     }
 
     &__arrows{
@@ -68,4 +95,5 @@
         width:32px;
         height:32px;
     }
+}
 }
