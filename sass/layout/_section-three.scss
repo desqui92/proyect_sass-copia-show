@@ -1,0 +1,107 @@
+.c-section-three{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:100px;
+
+    &__part-one{
+        background:url("../images/map.svg");
+        width:90%;
+        height:400px;
+        margin:auto;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }    
+
+    &__image-one{
+        width:240px;
+        height:288px;
+        transition: all 0.3s;
+
+        &:hover{
+            margin-top:-20px;
+        }
+
+        @include tablet{
+            width:120px;
+            height:144px;
+            order:1;
+        }
+
+
+    }
+
+    &__image-two{
+        width:288px;
+        height:240px;
+        transition:all 0.3s;
+
+        &:hover{
+            margin-top:-20px;
+        }
+
+        @include tablet{
+            width:144px;
+            height:120px;
+            order:1;
+        }
+
+    }
+
+    &__left, &__right-two{
+        width:35%;
+        display:flex;
+        justify-content:center;
+        flex-direction:column;
+        align-items:left;
+        min-width:400px;
+
+        @include tablet{
+            align-items:center;
+            width:90%;
+            order:2;
+        }
+
+    }
+
+    &__right, &__left-two{
+        width:35%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        min-width:400px;
+
+        @include tablet{
+            align-items:center;
+            width:90%;
+        }
+
+    }
+
+    &__title{
+        font-size:36px;
+        color:white;
+        text-decoration:underline;
+        text-decoration-color:rgb(99, 102, 241);
+        
+        @include tablet{
+            font-size:28px;
+        }
+    }   
+
+
+    &__part-two{
+        width:90%;
+        height:400px;
+        margin:auto;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }   
+
+
+
+}
