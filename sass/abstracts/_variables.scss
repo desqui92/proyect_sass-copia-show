@@ -62,39 +62,3 @@ $scheme-total: (
         opacity:1;
     }
 }
-
-@keyframes carousel{
-    0%{
-        transform:translateX(0);
-    }
-    10%{
-        transform:translateX(-300px);
-    }
-    15%{
-        transform:translateX(-300px);
-    }
-    20%{
-        transform:translateX(-600px);
-    }
-    25%{
-        transform:translateX(-600px);
-    }
-    30%{
-        transform:translateX(-900px);
-    }
-    35%{
-        transform:translateX(-900px);
-    }
-    40%{
-        transform:translateX(-1200px);
-    }
-    45%{
-        transform:translateX(-1200px);
-    }
-    50%{
-        transform:translateX(-1500px);
-    }
-    100%{
-        transform:translateX(0);
-    }
-}

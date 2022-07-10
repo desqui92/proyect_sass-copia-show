@@ -82,6 +82,11 @@
         align-items:center;
         flex-direction:row;
         justify-content: space-between;
+
+        @include phone{
+            justify-content:center;
+            margin-bottom:20px;
+        }
     }
 
 }
